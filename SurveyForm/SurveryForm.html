@@ -4,63 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css" />
-    <title>freeCodeCamp Survey Form</title>
+    <title>Survey for Athletes</title>
   </header>
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description" class="established">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form" action='https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a'>
+    <h1 id="title">Athlete Performance and Wellness Survey</h1>
+    <p id="description" class="established">Thank you for taking the time to share your experiences as an athlete. Your feedback helps improve training programs and athlete support systems.</p>
+
+    <form id="survey-form" action="#">
       <fieldset>
-        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
-        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required /></label>
-        <label id="number-label">Age <small>(optional)</small> <input id="number" type="number" min="10" max="99" placeholder="Age" /  ></label>
-        <label> Which option best describes your current role
+        <label id="name-label">Full Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+
+        <label id="email-label">Email
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+
+        <label id="number-label">Age <small>(optional)</small>
+          <input id="number" type="number" min="10" max="99" placeholder="Enter your age" />
+        </label>
+
+        <label> What type of athlete are you?
           <select id="dropdown">
-            <option value="">Select current role</option>
-            <option value="1">Student</option>
-            <option value="2">Full Time Job</option>
-            <option value="3">Full Time Learner</option>
-            <option value="4">Prefer not to say</option>
+            <option value="">Select your category</option>
+            <option value="1">Student Athlete</option>
+            <option value="2">Professional Athlete</option>
+            <option value="3">Amateur Athlete</option>
+            <option value="4">Coach/Trainer</option>
             <option value="5">Other</option>
           </select>
         </label>
       </fieldset>
+
       <fieldset>
-        <label> Would you recommend freeCodeCamp to a friend?</label>
-          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Definitely</label>
-          <label><input type="radio" class="inline" name="attribute" value="2" /> Maybe</label>
-          <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label>
+        <label>How satisfied are you with your current training program?</label>
+        <label><input type="radio" class="inline" name="satisfaction" value="1" checked /> Very Satisfied</label>
+        <label><input type="radio" class="inline" name="satisfaction" value="2" /> Satisfied</label>
+        <label><input type="radio" class="inline" name="satisfaction" value="3" /> Neutral</label>
+        <label><input type="radio" class="inline" name="satisfaction" value="4" /> Dissatisfied</label>
       </fieldset>
+
       <fieldset>
-        <label> What is your favorite feature of freeCodeCamp?
+        <label>What motivates you the most as an athlete?
           <select id="dropdown2">
             <option value="">Select an option</option>
-            <option value="1">Challenges</option>
-            <option value="2">Projects</option>
-            <option value="3">Community</option>
-            <option value="4">Open Source</option>
+            <option value="1">Personal Growth</option>
+            <option value="2">Winning Competitions</option>
+            <option value="3">Teamwork</option>
+            <option value="4">Health and Fitness</option>
+            <option value="5">Recognition and Awards</option>
           </select>
         </label>
       </fieldset>
+
       <fieldset>
-        <label>What would you like to see improved? <small>(Check all that apply)</small> </label>
-        <label><input type="checkbox" class="inline" value="front-end-projects" /> Front-end Projects</label>
-        <label><input type="checkbox" class="inline" value="back-end-projects" /> Back-end Projects</label>
-        <label><input type="checkbox" class="inline" value="data-visualization" /> Data visualization</label>
-        <label><input type="checkbox" class="inline" value="challenges" /> Challenges</label>
-        <label><input type="checkbox" class="inline" value="open-source-community" /> Open Source Community</label>
-        <label><input type="checkbox" class="inline" value="gitter-help-rooms" /> Gitter help rooms</label>
-        <label><input type="checkbox" class="inline" value="videos" /> Videos</label>
-        <label><input type="checkbox" class="inline" value="city-meetups" /> City Meetups</label>
-        <label><input type="checkbox" class="inline" value="wiki" /> Wiki</label>
-        <label><input type="checkbox" class="inline" value="forum" /> Forum</label>
-        <label><input type="checkbox" class="inline" value="additional-courses" /> Additional Courses</label>
+        <label>Which areas would you like to improve? <small>(Check all that apply)</small></label>
+        <label><input type="checkbox" class="inline" value="strength" /> Strength Training</label>
+        <label><input type="checkbox" class="inline" value="endurance" /> Endurance</label>
+        <label><input type="checkbox" class="inline" value="speed" /> Speed and Agility</label>
+        <label><input type="checkbox" class="inline" value="mental" /> Mental Focus</label>
+        <label><input type="checkbox" class="inline" value="nutrition" /> Nutrition</label>
+        <label><input type="checkbox" class="inline" value="recovery" /> Recovery and Rest</label>
+        <label><input type="checkbox" class="inline" value="teamwork" /> Teamwork</label>
       </fieldset>
+
       <fieldset>
-        <label> Any comments or suggestions?
-          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        <label>Any comments or suggestions for improving athlete programs?
+          <textarea rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
         </label>
       </fieldset>
+
       <fieldset>
         <input type="submit" value="Submit" id="submit" />
       </fieldset>
