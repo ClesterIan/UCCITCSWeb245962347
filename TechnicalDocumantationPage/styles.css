@@ -1,0 +1,131 @@
+* {
+  margin: 5px;
+  padding: 0px;
+  text-align: left;
+  background-color: white;
+        }
+
+p {
+  font-size: 14px;
+  margin: 0px -200px 0 0;
+}
+
+ul {
+  margin: 0 -10 0 -10;
+  color: green;
+}
+
+.nav-link {
+  text-align: center;
+  color: black;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+li, .intro {
+  width: 100%
+}
+
+li, .blowing {
+  width: 500px;
+}
+
+li, .size {
+  width: 500px;
+}
+
+
+
+@media {
+  
+}
+
+a {
+	margin: 50px 3px 50px 3px;
+	font-family: 'Times New Roman', sans-serif;
+  padding: 10px 0 0 0;
+  width: 150px;
+  background-color: white;
+}
+
+.navbar a:hover {
+  color: #1c87c9;
+}
+
+.main-section {
+  width: 25%;
+  align: right;
+  padding: 10px 300px;
+}
+
+header, .main-section {
+  font-size: 20px;
+}
+
+h1{
+  width: 200px;
+  font-size: 24px;
+  text-align: left;
+}
+
+h2{
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+  border: 3px solid yellow;
+}
+
+h3{
+  font-size: 16px;
+  align: left;
+  border: 100%;
+}
+
+h5 {
+  font-size: 18;
+  text-align: center;
+}
+
+h6 {
+  font-size: 16;
+  text-align: left;
+  width: 500px;
+}
+
+li {
+  font-size: 24px;
+
+}
+
+.custom-indent {
+  padding-left: 25px;
+}
+
+p, .main-section {
+  font-size: 18px;
+}
+
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 25%;
+  height: 600px;
+  font-size: 12px;
+  text-align: left;
+  color: black;
+  padding: 0 0 0 0;
+  border: 2px solid red;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: red;
+  margin: 0px 300
+}
+
+footer, p {
+  padding: 0px 0px 0px 0px;
+}
