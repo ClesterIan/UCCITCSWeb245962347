@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="header-inner">
+      <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Mitsubishi_logo.png" alt="Company logo">
+
+      <nav id="nav-bar" aria-label="Main navigation">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="features" class="section hero">
+      <h1>Meet the Montero Sport</h1>
+      <p>Powerful. Stylish. Reliable. The SUV built for every road—comfort for the family, strength for adventure.</p>
+
+      <div class="video-wrap">
+        <iframe id="video"
+                src="https://www.youtube.com/embed/tO2tZ62cS1U"
+                title="Montero Sport overview video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <div class="pricing-cards">
+        <article class="card">
+          <h3>Montero Sport GLX</h3>
+          <p>P1,568,000 / month</p>
+        </article>
+        <article class="card">
+          <h3>Montero Sport GLS</h3>
+          <p>P1,828,000 / month</p>
+        </article>
+        <article class="card">
+          <h3>Montero Sport GT</h3>
+          <p>Contact us</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Get notified</h2>
+      <p>Enter your email to receive updates and exclusive offers for the Montero Sport.</p>
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <label for="email" class="visually-hidden">Email address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Notify me">
+      </form>
+    </section>
+
+    <footer id="footer" class="section">
+      <p>© <span id="year"></span> Montero Sport. All rights reserved.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
